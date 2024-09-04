@@ -5,18 +5,19 @@
     padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
 
 :root {
     --fonte1: verdana, 'genava', tahoma, sans-serif;
-    --fonte2: 'Passion One', system-ui;
-    --fonte3: 'Sriracha', system-ui;
+    --fonte2: "Playwrite-CU", system-ui;
+    --fonte3: "Sriracha", system-ui;
 }
 
 html, body {
     min-height: 100%;
     background-color: darkgray;
-    font-family: var(--fonte1);
+    font-family: var(--fonte2);
 }
 
 header {
@@ -46,11 +47,16 @@ a:hover {
 }
 
 section {
-    padding-top: 10%;
+    padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    font-family: var(--fonte3);
+    font-family: var(--fonte2);
+    font-size:3.5vw ;
+}
+
+section > p{
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -60,12 +66,15 @@ section.normal {
 
 section.imagem > p {
     width: 400px;
-    background-color: rgba(0, 0, 0, 0.301);
+    background-color: rgba(0, 0, 0, 0.678);
+    text-shadow: 2px 2px 0px black;
 }
 
 section.imagem {
-    background-color: rgba(0, 0, 0, 0.767);
+    background-color: rgba(0, 0, 0, 0.404);
     color: white;
+    text-shadow: 1px 1px 1px black;
+    background-attachment: fixed;
 }
 
 footer {
@@ -73,4 +82,14 @@ footer {
     text-align: center;
     color: white;
     padding: 10px;
+}
+
+section#imagemum{
+background-image: url('imagens/background001.jpg');
+background-position: center right 20%;
+background-size: 115%;
+}
+
+section#imagemdois{
+background-image: url('imagens/background002.jpg');
 }
